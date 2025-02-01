@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,body{
+        height: 100vh;
+        width: 100vw;
+    }
+    nav{
+        height: 80px;
+        width: 100%;
+        /* border: 3px solid blue; */
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-color: black;
+    }
+    .logo{
+        height: 45px;
+        width: 50px;
+        /* border: 2px solid red; */
+        margin-top: 15px;
+        margin-left: 25px;
+        border-radius: 15px;
+        float: left;
+        background: white;
+    }
+    .line{
+        height: 30px;
+        width: 3px;
+        border: 2px solid black;
+        margin-left: 35px;
+        margin-top: 8px;
+    }
+    .line2{
+        height: 30px;
+        width: 3px;
+        border: 2px solid black;
+        rotate: 90deg;
+        margin-top: -45px;
+        margin-left: 22px;
+    }
+    .circle{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 3px solid black;
+        margin-left: 15px;
+        margin-top: -8px;
+    }
+    .logo_name{
+        /* border: 2px solid red; */
+        height: 40px;
+        width: 95px;
+        float: left;
+        margin-top: 18px;
+        margin-left: 10px;
+        padding: 8px;
+        font-size: 20px;
+        color: white;
+        float: left;
+    }
+    .line3{
+        height: 45px;
+        width: 3px;
+        border: 2px solid white;
+        margin-left: 2px;
+        margin-top: 15px;
+        float: left;
+    }
+    .help{
+        /* border: 2px solid red; */
+        height: 40px;
+        width: 120px;
+        float: left;
+        margin-top: 18px;
+        margin-left: 8px;
+        padding: 8px;
+        font-size: 20px;
+        color: white;
+        float: left;
+
+    }
+    .nav_btn{
+        height: 40px;
+        width: 150px;
+        border: 2px solid white;
+        color: white;
+        background-color: black;
+        margin-left: 620px;
+        margin-top: 15px;
+        float: left;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    .nav_btn2{
+        height: 40px;
+        width: 80px;
+        border: 2px solid black;
+        margin-left: 40px;
+        margin-top: 15px;
+        float: left;
+        background-color: blue;
+        color: white;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    header{
+        height: 60%;
+        width: 100%;
+        border: 2px solid #dadbf1;
+        background-color: #dadbf1;
+    }
+    .header_help{
+        height: 80px;
+        width: 500px;
+        /* border: 3px solid green; */
+        text-align: center;
+        margin-left: 28%;
+        margin-top: 5%;
+        font-size: 50px;
+        float: left;
+    }
+    .search{
+        height: 40px;
+        width: 500px;
+        margin-left: 28%;
+        margin-top: 15%;
+        /* border: 3px solid red ; */
+        /* background-color: white; */
+    }
+    .search_name{
+        height: 40px;
+        width: 70px;
+        /* border: 3px solid blue; */
+        padding: 6px;
+        float: left;
+    }
+    input{
+       border: 3px solid none;
+       height: 40px;
+       width: 500px;
+       margin-top: -8px;
+    }
+    .arrow{
+        height: 40px;
+        width: 80px;
+        /* border: 2px solid green; */
+        margin-left: 460px;
+        padding: 6px;
+        font-size: 18px;
+    }
+    section{
+        height: 100%;
+        width: 100%;
+        /* border: 3px solid brown; */
+    }
+    .left{
+        height: 100%;
+        width: 50%;
+        /* border: 2px solid red; */
+        float: left;
+    }
+    .branch{
+        height: 33%;
+        width: 100%;
+        /* border: 2px solid blue; */
+        float: left;
+        margin-left: 130px;
+    }
+    .manage{
+        height: 33%;
+        width: 100%;
+        /* border: 2px solid blue; */
+        float: left;
+        margin-left: 130px;
+    }
+    .abstract{
+        height: 34%;
+        width: 100%;
+        /* border: 2px solid blue; */
+        float: left;
+        margin-left: 130px;
+    }
+    .right{
+        height: 100%;
+        width: 50%;
+        /* border: 2px solid red; */
+        float: left;
+        margin-left: -30px;
+    }
+    .account{
+        height: 33%;
+        width: 100%;
+        /* border: 2px solid blue; */
+        float: left;
+    }
+    .biling{
+        height: 33%;
+        width: 100%;
+        /* border: 2px solid blue; */
+        float: left;
+    }
+    .support{
+        height: 34%;
+        width: 100%;
+        /* border: 2px solid blue; */
+        float: left;
+    }
+    .img{
+         height: 80px;
+         width: 80px;
+         /* border: 2px solid pink; */
+         margin-top: 30px;
+         margin-left: 40px;
+         float: left;
+        
+    }
+    h3{
+        margin-top: 30px;
+        margin-left: 150px;
+       
+       
+    }
+    .header,p{
+        margin-top: 10px;
+        margin-left: 150px;
+        color: black;
+       
+    }
+    h5{
+        margin-top: 10px;
+        margin-left: 150px;
+        color: blue;
+       
+    }
+    footer{
+        height: 80%;
+        width: 100%;
+        border: 2px solid black;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: black;
+    }
+    .ab{
+        height: 100%;
+        width: 20%;
+        /* border: 3px solid green; */
+        float: left;
+    }
+    .footer,h1{
+        color: white;
+        margin-top: 25px;
+        margin-left: 40px;
+    }
+    .resource{
+        height: 100%;
+        width: 20%;
+        /* border: 3px solid green; */
+        float: left;
+    }
+    .community{
+        height: 100%;
+        width: 20%;
+        /* border: 3px solid green; */
+        float: left;
+    }
+    .company{
+        height: 100%;
+        width: 20%;
+        /* border: 3px solid green; */
+        float: left;
+    }
+    .copyright{
+        height: 100%;
+        width: 20%;
+        /* border: 3px solid green; */
+        float: left;
+    }
+    .footer,.line2{
+        height: 30px;
+        width: 3px;
+        border: 2px solid black;
+        rotate: 90deg;
+        margin-top: -45px;
+        margin-left: 21px;
+    }
+    .footer,h4{
+        color: white;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+    .contact{
+        color: #ffff;
+        margin-left: 40px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .email{
+        color: #fff;
+        margin-left: 40px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .copyright{
+        height: 50%;
+        width: 20%;
+        /* border: 3x solid green; */
+        margin-top: 180px;
+    }
+    .footer,h6{
+        color: white;
+        margin-top: 70px;
+        margin-left: 15px;
+        font-size: 20px;
+    }
+   
+    .footer,h2{
+        color: white;
+        margin-top: 10px;
+        margin-left: 15px;
+        font-size: 18px;
+    }
+   
+ 
+   
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="line"></div>
+            <div class="line2"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="logo_name">Abstract</div>
+        <div class="line3"></div>
+        <div class="help">Help Center</div>
+        <button class="nav_btn">Submit a request</button>
+        <button class="nav_btn2">Sign in</button>
+    </nav>
+    <header>
+        <div class="header_help">How can we help? </div>
+        <div class="search">
+            <div class="search_name"><input type="text" placeholder="search"></div>
+            <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+        </div>
+
+    </header>
+    <section>
+        <div class="left">
+            <div class="branch">
+                <div class="img"><img src="1img.png" alt=""></div>
+                <h3>Branches</h3>
+                <p>Abstract Branches lets you manage,<br>version, and document your designs in<br>one place</p>
+                <h5>Learn  More <i class="ri-arrow-right-line"></i></h5>
+            </div>
+            <div class="manage">
+                <div class="img"><img src="2img.png" alt=""></div>
+                <h3>Manage organization, teams, and<br>projects</h3>
+                <p>Use Abstract organizations, teams, and<br> projects to organize your<br> people and your work.</p>
+                <h5>Learn  More <i class="ri-arrow-right-line"></i></h5>
+            </div>
+            <div class="abstract">
+                <div class="img"><img src="3img.png" alt=""></div>
+                <h3>Authenticate to Abstract</h3>
+                <p>Set up and configure SSO,SCIM, and <br> Just-in-Time provisioning.</p>
+                <h5>Learn  More <i class="ri-arrow-right-line"></i></h5>
+            </div>
+        </div>
+        <div class="right">
+            <div class="account">
+                <div class="img"><img src="4img.png" alt=""></div>
+                <h3>Manage your account</h3>
+                <p>Configure your settings, such as<br> your email, profile details, and password</p>
+                <h5>Learn  More <i class="ri-arrow-right-line"></i></h5>
+            </div>
+            <div class="biling">
+                <div class="img"><img src="5img.png" alt=""></div>
+                <h3>Manage biling</h3>
+                <p>Change subscription and payment <br>details</p>
+                <h5>Learn  More <i class="ri-arrow-right-line"></i></h5>
+            </div>
+            <div class="support">
+                <div class="img"><img src="6img.png" alt=""></div>
+                <h3>Abstract support</h3>
+                <p>Get in touch with a human.</p>
+                <h5>Learn  More <i class="ri-arrow-right-line"></i></h5>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="ab">
+            <h1>Abstract</h1>
+            <h4>Branches</h4>
+            <h4>Pricing</h4>
+            <h4>Download</h4>
+        </div>
+        <div class="resource">
+            <h1>Resources</h1>
+                <h4>Blog</h4>
+                <h4>Help Center</h4>
+                <h4>Release Notes</h4>
+                <h4>Status</h4>
+        </div>
+        <div class="community">
+            <h1>Community</h1>
+                <h4>Twitter</h4>
+                <h4>LinkedIn</h4>
+                <h4>Facebook</h4>
+                <h4>Dribbble</h4>
+                <h4>Podcast</h4>
+            </ul>
+
+        </div>
+        <div class="company">
+            <h1>Company</h1>
+                <h4>Abouts Us</h4>
+                <h4>Careers</h4>
+                <h4>Legal</h4>
+            <div class="contact">Contact Us</div>
+            <P class="email">info@abstract.com</P>
+        </div>
+        <div class="copyright">
+          <div class="logo">
+            <div class="line"></div>
+            <div class="line2"></div>
+            <div class="circle"></div>
+        </div>
+            <h6>Copyright 2022</h6>
+            <h2>Abstract Studio design, Inc.</h2>
+            <h2>All rights reserved</h2>
+        </div>
+
+    </footer>
+</body>
+</html>
